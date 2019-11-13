@@ -2,7 +2,10 @@ using ValrCore.Utils;
 using Newtonsoft.Json;
 
 namespace ValrCore {
-    public List<CurrencyPair> currenciePairs = new List<CurrencyPair>();
+    public class CurrencyPair{
+         public CurrencyPair[] currenciePairs {get;set;}
+    }
+   
 
     public class CurrencyPair{
         public string Symbol {get; set;}
